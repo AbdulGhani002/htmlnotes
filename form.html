@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="noaction.php" method="dialog">
+        <fieldset>
+            <legend>Enter Personal Details:</legend>
+        <label for="Name">
+            Name:
+            <input type="text" name="Name" placeholder="Full Name">
+        </label>
+        <br><br>
+        <label for="password">
+            Password:
+            <input type="password" name="password" placeholder="Password">
+        </label>
+        <br><br>
+        <label for="Gender">
+            Select Your Gender:
+            <br><br>
+            Male<input type="radio" name="Gender" value="Male" placeholder="Male">
+            Female<input type="radio" name="Gender" value="Female" placeholder="Female">
+        </label>
+        <br><br>
+        <label for="Hobbies">
+            Hobbies:
+        </label>
+            <br><br>
+            <label for="Hobby 1">
+            Music<input type="checkbox" name="Hobby 1" value="Music">
+            </label>
+            <label for="Hobby 2">
+            Gardening<input type="checkbox" name="Hobby 2" value="Gardening">
+        </label>
+        <br><br>
+        <label for="Country">
+            Select Your Country:
+            <select name="Country" id="live">
+                <option value="India">India</option>
+                <option value="Pak">Pakistan</option>
+                <option value="Nep">Nepal</option>
+                <option value="China" selected>China</option>
+                <option value="Siri">Siri Lanka</option>
+                <option value="Bangel">Bangladesh</option>
+                <option value="Oman">Oman</option>
+                <option value="Russia">Russia</option>
+            </select>
+        </label>
+        <br><br>
+        <label for="Cars">Select Car you wnat to buy:
+            <select name="Cars" id="">
+                <optgroup label="Toyota">
+                    <option value="Innova" selected>Innova</option>
+                    <option value="Etios">Etios</option>
+                    <option value="Fortuner">Fortuner</option>
+                </optgroup>
+                <optgroup label="Renault">
+                    <option value="Kwid">Kwid</option>
+                    <option value="Duster">Duster</option>
+                    <option value="Captur">Captur</option>
+                </optgroup>
+
+            </select>
+        </label>
+        <br><br>
+        <label for="Cars">Cars
+            <input list="Cars">
+            <dtatalist id="Cars">
+                <option value="Innova">
+                <option value="Etios">
+                <option value="Fortuner">
+                <option value="Kwid">
+                <option value="Duster">
+                <option value="Captur">
+            </dtatalist>
+        </label>
+        <br><br>
+        <label for="File">Upload File
+            <input type="file" name="File" accept="image/*">
+        </label>
+        <br><br>
+        <label for="Message">
+            Write about yourself:
+            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+        </label>
+        <br><br>
+        
+        <label for="reset">
+            <input type="reset" name="reset" placeholder="Reset" value="Reset">
+        </label>
+        <label for="Submit">
+            <input type="submit" name="Submit" placeholder="Submit" value="Submit">
+        </label>
+        <br><br>
+        <input type="image" src="https://media.istockphoto.com/photos/young-woman-using-dslr-camera-picture-id610259354"
+        width="200px">
+        </fieldset>
+    </form>
+</body>
+</html>
